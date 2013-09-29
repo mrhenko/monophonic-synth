@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>SoundFX Synth</title>
+</head>
+
+<body>
+
+	<h1>SoundFX Synth</h1>
+
+	<script type="text/javascript" src="synthModule.js"></script>
+
+	<script type="text/javascript">
+				
+
+		var mySynth = new Synth();
+
+		console.log(mySynth);
+		
+	</script>
+		<div>
+			<h2>My Synth</h2>
+			<a href="javascript:mySynth.noteOn()">Note On</a>
+			<a href="javascript:mySynth.noteOff()">Note Off</a>
+			
+			<h3>Note Values</h3>
+			<ul>
+				<li><a href="javascript:mySynth.noteValue('a')">A</a></li>
+				<li><a href="javascript:mySynth.noteValue('b')">B</a></li>
+				<li><a href="javascript:mySynth.noteValue('c')">C</a></li>
+				<li><a href="javascript:mySynth.noteValue('d')">D</a></li>
+				<li><a href="javascript:mySynth.noteValue('e')">E</a></li>
+				<li><a href="javascript:mySynth.noteValue('f')">F</a></li>
+				<li><a href="javascript:mySynth.noteValue('g')">G</a></li>	
+			</ul>
+
+			<h3>Octave</h3>
+			<ul>
+				<li><a href="javascript:mySynth.setOctave(1)">1</a></li>
+				<li><a href="javascript:mySynth.setOctave(2)">2</a></li>
+				<li><a href="javascript:mySynth.setOctave(3)">3</a></li>
+				<li><a href="javascript:mySynth.setOctave(4)">4</a></li>
+			</ul>
+
+		</div>
+
+	</body>
+
+</html>
